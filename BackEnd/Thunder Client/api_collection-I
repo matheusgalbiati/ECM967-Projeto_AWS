@@ -1,0 +1,274 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "TCC - API Gateway",
+    "dateExported": "2023-12-01T02:10:47.634Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "ff985a8b-0213-4353-bd5d-7b68d5de840a",
+            "name": "users",
+            "containerId": "",
+            "created": "2023-08-20T13:54:46.748Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "94386e08-60ae-4de8-98b7-da2978ed5859",
+            "name": "devices",
+            "containerId": "",
+            "created": "2023-08-20T14:51:43.535Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "ea0cb4b1-3f02-45e6-bd7d-013fe0cda2d7",
+            "name": "device contacts",
+            "containerId": "",
+            "created": "2023-09-23T19:11:05.329Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "36316bfd-5ac4-406a-aeec-4d9d7e5abd2c",
+            "name": "user shared devices",
+            "containerId": "",
+            "created": "2023-09-25T01:05:48.154Z",
+            "sortNum": 40000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "6d1fc730-3ef5-44b8-a69d-25b43e2ef8b3",
+            "colId": "9d557aff-b7c6-40a5-8d2d-4a1be4a27658",
+            "containerId": "ff985a8b-0213-4353-bd5d-7b68d5de840a",
+            "name": "create_user",
+            "url": "{{base_url}}/users/create",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-08-17T14:49:11.110Z",
+            "modified": "2023-10-01T00:08:08.615Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"user_email\": \"teste3@gmail.com\",\n  \"senha\": \"teste3\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "cd691eb2-0807-413a-9b94-5a2b8b31f70f",
+            "colId": "9d557aff-b7c6-40a5-8d2d-4a1be4a27658",
+            "containerId": "ff985a8b-0213-4353-bd5d-7b68d5de840a",
+            "name": "get_user",
+            "url": "{{base_url}}/users/infos/matheus@gmail.com",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-08-17T14:49:18.906Z",
+            "modified": "2023-10-18T01:32:28.650Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "fdb6f4b3-160b-4635-bcf6-9f985efa1004",
+            "colId": "9d557aff-b7c6-40a5-8d2d-4a1be4a27658",
+            "containerId": "ff985a8b-0213-4353-bd5d-7b68d5de840a",
+            "name": "login_user",
+            "url": "{{base_url}}/users/login",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-08-17T15:25:51.849Z",
+            "modified": "2023-08-26T18:08:06.087Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"user_email\": \"bonato@gmail.com\",\n  \"senha\": \"xyz12\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "d5b28fb0-bbae-4224-bfd3-34bc30b62482",
+            "colId": "9d557aff-b7c6-40a5-8d2d-4a1be4a27658",
+            "containerId": "ff985a8b-0213-4353-bd5d-7b68d5de840a",
+            "name": "update_user",
+            "url": "{{base_url}}/users/update/teste1@gmail.com",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2023-08-20T13:56:54.942Z",
+            "modified": "2023-10-09T22:06:43.089Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"senha\": \"teste12\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "3253d779-bab2-43e2-9c26-56c399d8cfaa",
+            "colId": "9d557aff-b7c6-40a5-8d2d-4a1be4a27658",
+            "containerId": "94386e08-60ae-4de8-98b7-da2978ed5859",
+            "name": "register_device",
+            "url": "{{base_url}}/devices/create",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2023-08-20T23:16:42.830Z",
+            "modified": "2023-09-25T22:39:27.369Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"device_id\": 3,\n  \"user_email\": \"matheus@gmail.com\",\n  \"device_nickname\": \"Rex\",\n  \"device_photo_id\": 2\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "ad9491f3-7810-441b-9ede-cc00d91d66a2",
+            "colId": "9d557aff-b7c6-40a5-8d2d-4a1be4a27658",
+            "containerId": "94386e08-60ae-4de8-98b7-da2978ed5859",
+            "name": "update_device",
+            "url": "{{base_url}}/devices/update/2",
+            "method": "PUT",
+            "sortNum": 60000,
+            "created": "2023-08-20T23:34:41.355Z",
+            "modified": "2023-09-12T23:27:04.074Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"device_nickname\": \"Thor\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "4bf99975-bde9-4eb0-b2ea-f952aecf9463",
+            "colId": "9d557aff-b7c6-40a5-8d2d-4a1be4a27658",
+            "containerId": "94386e08-60ae-4de8-98b7-da2978ed5859",
+            "name": "remove_device",
+            "url": "{{base_url}}/devices/remove/3",
+            "method": "DELETE",
+            "sortNum": 70000,
+            "created": "2023-08-20T23:45:25.347Z",
+            "modified": "2023-09-12T23:29:33.220Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "7a8cabb4-0e25-4be2-9cd1-694708c593fe",
+            "colId": "9d557aff-b7c6-40a5-8d2d-4a1be4a27658",
+            "containerId": "94386e08-60ae-4de8-98b7-da2978ed5859",
+            "name": "get_devices",
+            "url": "{{base_url}}/devices/list/matheus@gmail.com",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2023-08-21T03:41:08.934Z",
+            "modified": "2023-08-21T04:28:47.309Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "ba50dd64-9360-4f35-8baf-296765866b81",
+            "colId": "9d557aff-b7c6-40a5-8d2d-4a1be4a27658",
+            "containerId": "ea0cb4b1-3f02-45e6-bd7d-013fe0cda2d7",
+            "name": "register_device_contact",
+            "url": "{{base_url}}/device_contacts/create",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2023-09-23T19:11:22.989Z",
+            "modified": "2023-09-25T22:41:54.677Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"device_id\": 1,\n  \"contact_email\": \"matheus@gmail.com\",\n  \"device_contact_nickname\": \"Matheus\",\n  \"contact_photo_id\": 1\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "ee0e4ae1-68f4-43a3-b07f-aa48ef1498dc",
+            "colId": "9d557aff-b7c6-40a5-8d2d-4a1be4a27658",
+            "containerId": "ea0cb4b1-3f02-45e6-bd7d-013fe0cda2d7",
+            "name": "get_device_contacts",
+            "url": "{{base_url}}/device_contacts/list/2",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2023-09-23T19:12:00.455Z",
+            "modified": "2023-09-23T19:34:41.736Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "0ab013de-5256-4c1a-b5a7-db71420ce5d8",
+            "colId": "9d557aff-b7c6-40a5-8d2d-4a1be4a27658",
+            "containerId": "ea0cb4b1-3f02-45e6-bd7d-013fe0cda2d7",
+            "name": "update_device_contact",
+            "url": "{{base_url}}/device_contacts/update/2/matheus@gmail.com",
+            "method": "PUT",
+            "sortNum": 110000,
+            "created": "2023-09-23T19:12:10.688Z",
+            "modified": "2023-10-09T23:32:16.147Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"approval_status\": \"approved\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "8e1f7c62-2ed5-45d6-b8ce-11d558826664",
+            "colId": "9d557aff-b7c6-40a5-8d2d-4a1be4a27658",
+            "containerId": "ea0cb4b1-3f02-45e6-bd7d-013fe0cda2d7",
+            "name": "remove_device_contact",
+            "url": "{{base_url}}/device_contacts/remove/2/fernando@gmail.com",
+            "method": "DELETE",
+            "sortNum": 120000,
+            "created": "2023-09-23T19:12:19.918Z",
+            "modified": "2023-09-23T19:43:26.589Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "0ee7e1be-1cbb-41b8-a7cd-71bc3077fb14",
+            "colId": "9d557aff-b7c6-40a5-8d2d-4a1be4a27658",
+            "containerId": "36316bfd-5ac4-406a-aeec-4d9d7e5abd2c",
+            "name": "get_shared_devices",
+            "url": "{{base_url}}/user_contacts/list/victor@gmail.com",
+            "method": "GET",
+            "sortNum": 130000,
+            "created": "2023-09-25T01:06:00.756Z",
+            "modified": "2023-10-18T02:57:33.196Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "4fce1e95-960e-412e-a38c-5e32a08bd473",
+            "colId": "9d557aff-b7c6-40a5-8d2d-4a1be4a27658",
+            "containerId": "36316bfd-5ac4-406a-aeec-4d9d7e5abd2c",
+            "name": "update_shared_device",
+            "url": "{{base_url}}/user_contacts/update/matheus@gmail.com/3",
+            "method": "PUT",
+            "sortNum": 140000,
+            "created": "2023-09-25T01:06:08.606Z",
+            "modified": "2023-09-25T22:43:06.450Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"shared_device_nickname\": \"Rex\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}

@@ -1,0 +1,76 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "TCC - API Gateway II",
+    "dateExported": "2023-12-01T02:11:26.212Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "639db0ef-5f25-480c-96ba-c96ef7442557",
+            "name": "home contact preference",
+            "containerId": "",
+            "created": "2023-10-09T22:02:33.908Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "dd9a5c37-6bd7-4c62-82af-8d54a6d613dd",
+            "name": "device geolocation",
+            "containerId": "",
+            "created": "2023-10-09T22:02:43.274Z",
+            "sortNum": 30000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "8b46ddc6-d217-4948-b764-79550b613bab",
+            "colId": "7f38e398-3001-4145-bd39-0bfb7393d70e",
+            "containerId": "639db0ef-5f25-480c-96ba-c96ef7442557",
+            "name": "update_home_contact",
+            "url": "{{base_url}}/user_contacts/home_contact/matheus@gmail.com/2",
+            "method": "POST",
+            "sortNum": 160000,
+            "created": "2023-10-09T22:02:33.916Z",
+            "modified": "2023-10-16T22:34:17.435Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"preference\": 2\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "c68eb4bb-de17-43dc-9277-5365ab00dc9d",
+            "colId": "7f38e398-3001-4145-bd39-0bfb7393d70e",
+            "containerId": "dd9a5c37-6bd7-4c62-82af-8d54a6d613dd",
+            "name": "get_device_geolocation",
+            "url": "{{base_url}}/device_geolocation/get/1",
+            "method": "GET",
+            "sortNum": 170000,
+            "created": "2023-10-09T22:02:43.282Z",
+            "modified": "2023-11-20T20:05:04.518Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "675e6375-a85f-46a4-8d9a-9dfe2de1b49b",
+            "colId": "7f38e398-3001-4145-bd39-0bfb7393d70e",
+            "containerId": "dd9a5c37-6bd7-4c62-82af-8d54a6d613dd",
+            "name": "update_device_geolocation",
+            "url": "{{base_url}}/device_geolocation/update",
+            "method": "POST",
+            "sortNum": 180000,
+            "created": "2023-10-09T22:02:43.282Z",
+            "modified": "2023-11-20T20:04:04.016Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"device_id\": \"1\",\n  \"latitude\": \"-23.5474385\",\n  \"longitude\": \"-48.637397\",\n  \"last_track_time\": \"2023-10-18 07:42:09\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
